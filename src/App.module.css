@@ -1,0 +1,9 @@
+body{
+    background-color: chartreuse;
+}
+
+.comtainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
