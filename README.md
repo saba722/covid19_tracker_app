@@ -1,3 +1,27 @@
+# COVID-19 Tracker Application
+
+## [Live Site](http://bootcamp2020_covid19_tracker.surge.sh/)
+![alt text](https://github.com/saba722/covid19_tracker_app/blob/master/images/covid19_app.png?raw=true)
+
+### Features:
+ - used covid19 API
+ - used different components link Graphs, cards, grids etc
+ - used React, Charts.JS and Material UI
+ - usd CSS to make UI attractive as well as responsive
+ - used different hooks like useState, useEffect etc
+
+#### API Used
+ - [covid19.mathdro.id/api](https://covid19.mathdro.id/api)
+
+### Application Link
+ - [COVID-19 Tracker](http://bootcamp2020_covid19_tracker.surge.sh/)
+
+### Setup
+
+```sh - run npm i && npm start ```
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
