@@ -1,7 +1,7 @@
 # COVID-19 Tracker Application
 
 ## [Live Site](http://bootcamp2020_covid19_tracker.surge.sh/)
-![alt text](https://github.com/saba722/covid19_tracker_app/blob/master/images/covid19_app.png?raw=true)
+![alt text](https://github.com/saba722/covid19_tracker_app/blob/master/src/images/covid19_app.png)
 
 ### Features:
  - used covid19 API
