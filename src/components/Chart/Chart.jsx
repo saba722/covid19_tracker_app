@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchDailyData } from '../../api';
 import { Line, Bar } from 'react-chartjs-2';
+import Moment from 'moment';
 
 import styles from './Chart.module.css';
 
@@ -20,17 +21,21 @@ const Chart = ({ data: {confirmed, recovered, deaths }, country }) => {
         ? (
         <Line 
             data={{
-                labels: dailyData.map(({ date }) => date),
+                labels: dailyData.map(({ date }) => {
+                    const newdate = Moment(date).format('DD-MM-YY');
+                    return newdate;
+                }),
                 datasets: [{
                     data: dailyData.map(({ confirmed }) => confirmed),
                     label: 'Infected',
-                    borderColor: '#3333ff',
+                    borderColor: '#E89E35',
+                    backgroundColor: 'hsla(35, 80%, 56%, 0.1)',
                     fill: true,
                 }, {
                     data: dailyData.map(({ deaths }) => deaths),
                     label: 'Deaths',
-                    borderColor: 'red',
-                    backgroundColor: 'rgba(255, 0, 0, 0.5)',
+                    borderColor: '#b8491a',
+                    backgroundColor: 'hsla(18, 75%, 41%, 0.301)',
                     fill: true,
                 }],
             }}
@@ -46,9 +51,9 @@ const Chart = ({ data: {confirmed, recovered, deaths }, country }) => {
                     datasets: [{
                         label: 'People',
                         backgroundColor: [
-                            'rgba(0, 0, 255, 0.5)',
-                            'rgba(0, 255, 0, 0.5)',
-                            'rgba(255, 0, 0, 0.5)',
+                            '#E89E35',
+                            '#E47B39',
+                            '#b8491a',
                         ],
                         data: [confirmed.value, recovered.value, deaths.value],
                     }]

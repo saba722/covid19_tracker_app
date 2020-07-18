@@ -1,4 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=BioRhyme Expanded');
+
 .formControl {
     width: 30%;
     margin-bottom: 30px !important;
+    background-color: white !important;
+    border: 3px solid #E89E35 !important;
+    border-radius: 15%;
+    padding: 10px !important;
+
+}
+
+.color {
+    color: #E89E35;
+    font-weight: bold;
+    font-family: 'BioRhyme Expanded';
+}
+
+.formControl NativeSelect {
+    color: #E89E35 !important;
+    font-weight: bold;
+    font-family: 'BioRhyme Expanded';
 }

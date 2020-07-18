@@ -3,11 +3,12 @@ import React from 'react';
 import Cards from './components/Cards/Cards';
 import Chart from './components/Chart/Chart';
 import CountryPicker from './components/CountryPicker/CountryPicker';
+import { Typography } from '@material-ui/core';
 
 // import {Cards, Chart, CountryPicker} from './components';
 import styles from './App.module.css';
 import { fetchData } from './api';
-import coronaImage from './images/image.png';
+import coronaImage from './images/logo.png';
 
 class App extends React.Component {
 
@@ -34,10 +35,20 @@ class App extends React.Component {
 
         return(
             <div className={styles.container}>
-                <img className={styles.image} src={coronaImage} alt="COVID-19"/>
+                <Typography variant='h1' className={styles.heading}>
+                    <div className={styles.head}>C<img className={styles.image} src={coronaImage} alt="COVID-19"/>VID</div>
+                </Typography>
+                <br />
                 <Cards data={data} />
+                <br />
+                <br />
+                <br />
                 <CountryPicker handleCountryChange={this.handleCountryChange}/>
+                <br />
+                <br />
                 <Chart data={data} country={country}/>
+                <br />
+                <br />
             </div>
         );
     }
