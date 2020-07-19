@@ -23,6 +23,12 @@
     font-weight: bolder;
 }
 
+.icon {
+    font-size: 22px;
+    color: #E89E35;
+    font-weight: bolder;
+}
+
 @media (max-width: 770px) {
     .card {
         margin: 2% 0 !important;

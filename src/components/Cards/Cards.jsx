@@ -25,7 +25,7 @@ const Cards = ({data: { confirmed, recovered, deaths, lastUpdate }}) => {
                             />
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2"> <span role='img' aria-label='infected'>&#x1F500;</span> Number of Active cases of COVID-19</Typography>
+                        <Typography variant="body2"> <span role='img' aria-label='infected' className={styles.icon}>&#8711;</span> Number of Active cases of COVID-19</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.recovered)}>
@@ -40,7 +40,7 @@ const Cards = ({data: { confirmed, recovered, deaths, lastUpdate }}) => {
                             />
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2"><span role='img' aria-label='recovered'>&#x1F501;</span> Number of Recoveries from COVID-19</Typography>
+                        <Typography variant="body2"><span role='img' aria-label='recovered' className={styles.icon}>&#916;</span> Number of Recoveries from COVID-19</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.deaths)}>
@@ -55,7 +55,7 @@ const Cards = ({data: { confirmed, recovered, deaths, lastUpdate }}) => {
                             />
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2"><span role='img' aria-label='recovered'>&#x1F502;</span> Number of Deaths caused by COVID-19</Typography>
+                        <Typography variant="body2"><span role='img' aria-label='deaths' className={styles.icon}>&#8855;</span> Number of Deaths caused by COVID-19</Typography>
                     </CardContent>
                 </Grid>
             </Grid>
