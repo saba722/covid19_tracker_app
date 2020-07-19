@@ -9,6 +9,7 @@ import { Typography } from '@material-ui/core';
 import styles from './App.module.css';
 import { fetchData } from './api';
 import coronaImage from './images/logo.png';
+import Footer from './components/Footer/Footer';
 
 class App extends React.Component {
 
@@ -49,6 +50,8 @@ class App extends React.Component {
                 <Chart data={data} country={country}/>
                 <br />
                 <br />
+                <br />
+                <Footer/>
             </div>
         );
     }

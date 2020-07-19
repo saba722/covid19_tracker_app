@@ -1,0 +1,14 @@
+.container {
+    width: 100%;
+    padding: 19px 0;
+    background-color: #E89E35;
+    margin-bottom: -8px;
+    text-align: center;
+    color: white;
+    
+}
+
+.font {
+    font-size: 20px !important;
+
+}
